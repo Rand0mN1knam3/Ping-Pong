@@ -32,6 +32,12 @@ win_wight = 500
 player_l = Player('raketka.png', 30, 200, 4, 50, 150)
 player_r = Player('raketka.png', 30, 200, 4, 50, 150)
 ball = GameSprite('tennisballpng.jpg', 200, 200, 4, 50, 50)
+ball_x = ball.rect.x
+ball_y = ball.rect.y
+font.init()
+font = font.Font(None, 35)
+lose1 = font.render('Player 1 lose!', True, (180, 0, 0))
+lose2 = font.render('Player 2 lose!', True, (180, 0, 0))
 window = display.set_mode((win_height, win_wight))
 window.fill(background)
 display.set_caption('пинг понг')
